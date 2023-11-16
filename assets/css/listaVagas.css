@@ -1,0 +1,61 @@
+.listaVagas {
+    display: flex;
+    justify-content: center;
+    margin: 0 80px;
+}
+
+.listaVagas__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    width: 768px;
+}
+
+.listaVagas__container > h4 {
+    color: var(--title);
+    font-size: 1.25rem;
+    font-weight: 500;
+    margin: 64px 0 8px 0;
+}
+
+.vaga {
+    border: solid 1px #EAECF0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    padding: 24px 28px;
+    row-gap: 24px;
+    transition: 0.5s all;
+}
+
+.vaga__nome {
+    color: var(--title);
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.vaga__dados {
+    column-gap: 24px;
+    display: flex;
+}
+
+.vaga__dados > span {
+    color: var(--text);
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.vaga:hover {
+    box-shadow: -4px 4px 5px #CCCCCC;
+    cursor: pointer;
+    transform: translate(5px, -5px);
+}
+
+@media screen and (max-width: 767px) {
+    .listaVagas {
+        margin: 0 32px;
+    }
+    .vaga__dados {
+        flex-direction: column;
+    }
+}

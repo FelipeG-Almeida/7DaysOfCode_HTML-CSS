@@ -1,0 +1,45 @@
+.vagas {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.vagas > span {
+    background-color: #8e24240d;
+    border-radius: 16px;
+    color: var(--red);
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-top: 80px;
+    padding: 4px 12px;
+}
+
+.vagas > h4 {
+    color: var(--title);
+    font-size: 2.25rem;
+    font-weight: 600;
+}
+
+.vagas > p {
+    color: var(--text);
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.vagas > img {
+    margin-top: 40px;
+    min-height: 300px;
+    object-fit: cover;
+    width: 85%;
+}
+
+@media screen and (max-width: 767px) {
+    .vagas {
+        margin: 0 32px;
+    }
+    .vagas > img {
+        width: 100%;
+    }
+}

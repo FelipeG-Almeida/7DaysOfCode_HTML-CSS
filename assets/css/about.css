@@ -1,0 +1,39 @@
+.about {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about > span {
+    color: var(--red);
+    font-weight: 600;
+    margin-top: 96px;
+}
+
+.about > h2 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 24px 0;
+}
+
+.about > p {
+    font-size: 1.25rem;
+    line-height: 30px;
+    max-width: 790px;
+}
+
+@media screen and (max-width: 1024px) {
+    .about {
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about {
+        margin: 0 2rem;
+    }
+    .about > p {
+        text-align: left;
+    }
+}
